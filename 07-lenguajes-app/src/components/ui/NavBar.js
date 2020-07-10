@@ -6,6 +6,7 @@ import { types } from "../../types/types";
 export const Navbar = () => {
 
   const { user, dispatch } = useContext(AuthContext);
+  
   const history = useHistory();
 
   const handleLogout = () => {

@@ -14,10 +14,13 @@ export const HeroScreen = ({history}) => {
   
   const handleReturn = () => {
     if (history.length <= 2) {
-      history.push('/');
+      
+     history.push('/');
+    } else {
+      
+      history.goBack();
     }
 
-    history.goBack();
   }
 
   const { id, superhero, publisher, alter_ego, first_appearance, characters } = hero;

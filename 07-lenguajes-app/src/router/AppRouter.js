@@ -13,7 +13,6 @@ import { LoginScreen } from '../components/login/LoginScreen';
 export const AppRouter = () => {
 
   const { user } = useContext(AuthContext);
-  console.log(user);
 
   return (
     <Router>
